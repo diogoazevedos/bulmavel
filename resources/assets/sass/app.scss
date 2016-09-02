@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,600);
+@import "node_modules/bulma/bulma";
+
+.is-big-titled {
+  font-family: 'Raleway', sans-serif;
+
+  .title {
+    font-weight: 100;
+    font-size: 84px;
+  }
+}
+
+.is-welcome-page {
+  @extend .is-big-titled;
+
+  li >  a {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+}
+
+.is-maintenance-page {
+  @extend .is-big-titled;
+}
+
+.is-not-found-page {
+  @extend .is-big-titled;
+}
